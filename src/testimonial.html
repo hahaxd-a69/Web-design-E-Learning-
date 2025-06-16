@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>testimonial</title>
+  </head>
+  <link rel="stylesheet" href="output.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <body>
+    <nav class="sticky top-0 z-50 bg-white shadow-md py-0">
+      <div
+        class="container mx-auto flex items-center justify-between px-4 lg:px-8 h-20"
+      >
+        <a href="index.html" class="flex items-center">
+          <p class="text-2xl font-bold flex items-center">
+            <img
+              src="../img/logo-square-01.png"
+              alt="Istad Icon"
+              class="h-12 mr-2"
+            />I<span class="text-orange-500">STAD</span>
+          </p>
+        </a>
+        <button
+          type="button"
+          class="lg:hidden text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 p-2 rounded-md"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+
+        <div
+          id="navbarCollapse"
+          class="hidden lg:flex lg:flex-grow lg:justify-end"
+        >
+          <div class="flex flex-col lg:flex-row items-center lg:space-x-4">
+            <a
+              href="index.html"
+              class="text-gray-800 hover:text-orange-500 py-2 lg:py-0 px-3 transition-colors duration-300 active-link"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="text-gray-800 hover:text-orange-500 py-2 lg:py-0 px-3 transition-colors duration-300 nav-link-underline"
+              >About</a
+            >
+            <a
+              href="courses.html"
+              class="text-gray-800 hover:text-orange-500 py-2 lg:py-0 px-3 transition-colors duration-300 nav-link-underline"
+              >Courses</a
+            >
+
+            <div class="relative group py-2 lg:py-0">
+              <button
+                class="text-gray-800 hover:text-orange-500 px-3 flex items-center focus:outline-none group-hover:text-orange-500"
+              >
+                Pages
+                <svg
+                  class="ml-1 w-4 h-4 transform group-hover:rotate-180 transition-transform duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                class="absolute hidden group-hover:block bg-white shadow-lg py-2 rounded-md mt-2 w-48 transition-all duration-300 ease-in-out origin-top-left lg:left-1/2 lg:-translate-x-1/2"
+              >
+                <a
+                  href="team.html"
+                  class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors duration-200"
+                  >Our Team</a
+                >
+                <a
+                  href="testimonial.html"
+                  class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors duration-200"
+                  >Testimonial</a
+                >
+              </div>
+            </div>
+            <a
+              href="contact.html"
+              class="text-gray-800 hover:text-orange-500 py-2 lg:py-0 px-3 transition-colors duration-300 nav-link-underline"
+              >Contact</a
+            >
+            <a
+              href="login.html"
+              class="text-gray-800 hover:text-orange-500 py-2 lg:py-0 px-3 transition-colors duration-300 nav-link-underline"
+              ><i class="fa fa-user"></i
+            ></a>
+            <a
+              href="#"
+              class="text-gray-800 hover:text-orange-500 py-2 lg:py-0 px-3 transition-colors duration-300"
+            >
+              <div id="google_translate_element"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="relative py-20 mb-16 overflow-hidden page-header">
+      <div
+        class="container mx-auto py-12 bg-cover text-center"
+        style="background-image: url('../img/carousel-1.jpg')"
+      >
+        <h1
+          class="text-4xl sm:text-5xl md:text-6xl text-white font-bold animate__animated animate__slideInDown"
+        >
+          Student Reviews
+        </h1>
+        <nav aria-label="breadcrumb" class="mt-4">
+          <ol class="flex justify-center space-x-2 text-white">
+            <li class="breadcrumb-item">
+              <a class="text-white hover:text-gray-200" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li>/</li>
+            <li class="breadcrumb-item text-white active" aria-current="page">
+              Reviews
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <section class="testimonials py-16 px-5 text-center bg-blue-400">
+      <h2 class="text-white text-4xl font-bold mb-4">Success stories</h2>
+      <p class="text-white text-lg mb-10 max-w-2xl mx-auto">
+        Can ISTAD courses help your career? Our learners tell us how.
+      </p>
+
+      <div class="testimonial-container flex justify-center gap-5 flex-wrap">
+        <div
+          class="testimonial bg-white p-5 rounded-lg w-72 shadow-md transition-all duration-300 cursor-pointer hover:scale-105"
+        >
+          <img
+            src="../img/Vibol.jpg"
+            alt="Vibol's testimonial"
+            class="rounded-full w-20 h-20 mx-auto mb-4 object-cover"
+          />
+          <h3 class="mt-2 mb-2 text-black text-xl font-semibold">Vibol</h3>
+          <p class="quote-text text-sm text-gray-600">
+            As a working professional, finding free courses that match my
+            schedule was a game-changer. The courses are engaging, and the
+            community aspect adds immense value. Highly recommended!
+          </p>
+        </div>
+        <div
+          class="testimonial bg-white p-5 rounded-lg w-72 shadow-md transition-all duration-300 cursor-pointer hover:scale-105"
+        >
+          <img
+            src="../img/Minea.jpg"
+            alt="Vibol's testimonial"
+            class="rounded-full w-20 h-20 mx-auto mb-4 object-cover"
+          />
+          <h3 class="mt-2 mb-2 text-black text-xl font-semibold">Minea</h3>
+          <p class="quote-text text-sm text-gray-600">
+            I’m amazed at the quality of the free courses available. The
+            instructors are experts in their fields, and the interactive lessons
+            make learning a breeze. Thank you for this opportunity!
+          </p>
+        </div>
+        <div
+          class="testimonial bg-white p-5 rounded-lg w-72 shadow-md transition-all duration-300 cursor-pointer hover:scale-105"
+        >
+          <img
+            src="../img/Koemlay.jpg"
+            alt="Vibol's testimonial"
+            class="rounded-full w-20 h-20 mx-auto mb-4 object-cover"
+          />
+          <h3 class="mt-2 mb-2 text-black text-xl font-semibold">Koemlay</h3>
+          <p class="quote-text text-sm text-gray-600">
+            I’m amazed at the quality of the free courses available. The
+            instructors are experts in their fields, and the interactive lessons
+            make learning a breeze. Thank you for this opportunity!
+          </p>
+        </div>
+
+        <div
+          class="testimonial bg-white p-5 rounded-lg w-72 shadow-md transition-all duration-300 cursor-pointer hover:scale-105"
+        >
+          <img
+            src="../img/Lina.jpg"
+            alt="Lina's testimonial"
+            class="rounded-full w-20 h-20 mx-auto mb-4 object-cover"
+          />
+          <h3 class="mt-2 mb-2 text-black text-xl font-semibold">Lina</h3>
+          <p class="quote-text text-sm text-black">
+            She always copy paste pi chatgpt rg copy ng muy kru lina numer 1 mg
+            but jol chit team work.
+          </p>
+        </div>
+
+        <div
+          class="testimonial bg-white p-5 rounded-lg w-72 shadow-md transition-all duration-300 cursor-pointer hover:scale-105"
+        >
+          <img
+            src="../img/Sok Heng.jpg"
+            alt="Sokheng's testimonial"
+            class="rounded-full w-20 h-20 mx-auto mb-4 object-cover"
+          />
+          <h3 class="mt-2 mb-2 text-black text-xl font-semibold">Sokheng</h3>
+          <p class="quote-text text-sm text-gray-600">
+            I’m amazed at the quality of the free courses available. The
+            instructors are experts in their fields, and the interactive lessons
+            make learning a breeze. Thank you for this opportunity!
+          </p>
+        </div>
+        <div
+          class="testimonial bg-white p-5 rounded-lg w-72 shadow-md transition-all duration-300 cursor-pointer hover:scale-105"
+        >
+          <img
+            src="../img/Pee Nat.jpg"
+            alt="Pee Nat's testimonial"
+            class="rounded-full w-20 h-20 mx-auto mb-4 object-cover"
+          />
+          <h3 class="mt-2 mb-2 text-black text-xl font-semibold">Pee Nat</h3>
+          <p class="quote-text text-sm text-gray-600">
+            I’m amazed at the quality of the free courses available. The
+            instructors are experts in their fields, and the interactive lessons
+            make learning a breeze. Thank you for this opportunity!
+          </p>
+        </div>
+      </div>
+
+      
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 pt-10 mt-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-white text-lg font-semibold mb-4">Quick Link</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="about.html" class="hover:underline text-gray-300"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="hover:underline text-gray-300"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:underline text-gray-300"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:underline text-gray-300"
+                  >Terms & Condition</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:underline text-gray-300"
+                  >FAQs & Help</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div>
+            <h4 class="text-white text-lg font-semibold mb-4">Contact</h4>
+            <p class="mb-2">
+              <i class="fas fa-map-marker-alt mr-2"></i>123 Street, Bangalore,
+              Karnataka
+            </p>
+            <p class="mb-2">
+              <i class="fas fa-phone-alt mr-2"></i>+855 717 240 181
+            </p>
+            <p class="mb-4">
+              <i class="fas fa-envelope mr-2"></i>ISTAD@gmail.com
+            </p>
+            <div class="flex space-x-3">
+              <a href="#" class="text-white hover:text-blue-400"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-white hover:text-blue-600"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-white hover:text-red-600"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="#" class="text-white hover:text-blue-500"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Newsletter -->
+          <div>
+            <h4 class="text-white text-lg font-semibold mb-4">
+              Subscribe to our Newsletter
+            </h4>
+            <p class="mb-4">
+              Subscribe now and join our growing community of learners committed
+              to lifelong education!
+            </p>
+            <form action="#" class="relative max-w-md">
+              <input
+                type="email"
+                required
+                placeholder="Your email"
+                class="w-full p-3 pr-20 rounded-md text-gray-900 focus:outline-none bg-white"
+              />
+              <button
+                type="submit"
+                class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+              >
+                <a href="#">Subscribe</a>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="bg-gray-800 py-4">
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left"
+        >
+          <p class="text-sm text-gray-400">
+            &copy;
+            <a
+              href="index.html"
+              class="border-b border-gray-500 hover:text-white"
+              >ISTAD</a
+            >, All Right Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

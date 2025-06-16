@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@layer coomponents {
+  .Servicestext {
+    @apply text-xl font-semibold mb-2;
+  }
+
+  .Services {
+    @apply bg-white shadow p-6 text-center rounded hover:shadow-lg transition;
+  }
+  .Category-Card {
+    @apply text-center shadow-md p-4 rounded-lg bg-white hover:shadow-lg transition;
+  }
+}
+@layer Courses {
+  .Courses-Header {
+    @apply text-lg font-semibold text-gray-800 mb-3;
+  }
+  .Courses {
+    @apply bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105;
+  }
+  .Courses-Free {
+    @apply absolute top-4 left-4 text-xs font-bold uppercase rounded px-2 py-1 bg-orange-500 text-white;
+  }
+  .Courses-Pain {
+    @apply absolute top-4 left-4 text-xs font-bold uppercase rounded px-2 py-1 bg-green-400 text-white;
+  }
+}

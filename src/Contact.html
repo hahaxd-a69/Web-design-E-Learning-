@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact page</title>
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="bg-white shadow sticky top-0 z-40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <a href="index.html" class="flex items-center space-x-2">
+            <img src="../img//logo-square-01.png" alt="Logo" class="h-12" />
+            <p class="text-2xl font-bold">
+              I<span class="text-orange-500">STAD</span>
+            </p>
+          </a>
+          <div class="lg:hidden">
+            <button id="menu-toggle" class="text-gray-500 focus:outline-none">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div id="navbar-menu" class="hidden lg:flex space-x-6 items-center">
+            <a href="index.html" class="text-blue-600 font-medium">Home</a>
+            <a href="about.html" class="text-gray-700 hover:text-blue-500"
+              >About</a
+            >
+            <a href="courses.html" class="text-gray-700 hover:text-blue-500"
+              >Courses</a
+            >
+            <div class="relative group">
+              <button
+                class="text-gray-700 hover:text-blue-500 focus:outline-none"
+              >
+                Pages
+              </button>
+              <div
+                class="absolute hidden group-hover:block bg-white shadow-md mt-2 rounded-md py-2 z-50"
+              >
+                <a href="team.html" class="block px-4 py-2 hover:bg-gray-100"
+                  >Our Team</a
+                >
+                <a
+                  href="testimonial.html"
+                  class="block px-4 py-2 hover:bg-gray-100"
+                  >Testimonial</a
+                >
+              </div>
+            </div>
+            <a href="contact.html" class="text-gray-700 hover:text-blue-500"
+              >Contact</a
+            >
+            <a href="login.html" class="text-gray-700 hover:text-blue-500"
+              ><i class="fa fa-user"></i
+            ></a>
+            <div id="google_translate_element" class="ml-2"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="bg-blue-600 py-12 text-white text-center">
+      <h1 class="text-4xl font-bold">Contact</h1>
+      <nav class="mt-2">
+        <ol class="inline-flex space-x-2 text-sm">
+          <li><a href="index.html" class="hover:underline">Home</a></li>
+          <li>/</li>
+          <li>Contact</li>
+        </ol>
+      </nav>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-semibold text-center mb-8">Contact Us</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Get In Touch</h3>
+            <p class="mb-6">
+              For any questions or inquiries, feel free to reach out to us!
+            </p>
+            <div class="space-y-4">
+              <div class="flex items-start gap-4">
+                <div class="bg-orange-500 text-white p-3 rounded">
+                  <i class="fa fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Office</h4>
+                  <p>
+                    No. 24, Street 562,Sangkat Boeung Kak I,Khan Toul Kork,Phnom
+                    Penh, Cambodia
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="bg-orange-500 text-white p-3 rounded">
+                  <i class="fa fa-phone-alt"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Mobile</h4>
+                  <p>+855 717240181</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="bg-orange-500 text-white p-3 rounded">
+                  <i class="fa fa-envelope-open"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Email</h4>
+                  <p>ISTAD@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <form
+              action="mailto:keertidvcorai@gmail.com"
+              method="POST"
+              enctype="text/plain"
+              class="space-y-4"
+            >
+              <div class="grid md:grid-cols-2 gap-4">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                  class="w-full p-3 border rounded"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                  class="w-full p-3 border rounded"
+                />
+              </div>
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                required
+                class="w-full p-3 border rounded"
+              />
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Message"
+                required
+                class="w-full p-3 border rounded"
+              ></textarea>
+              <button
+                type="submit"
+                class="bg-blue-600 text-white py-3 px-6 rounded w-full"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-gray-900 text-gray-300 pt-10 mt-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-white text-lg font-semibold mb-4">Quick Link</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="about.html" class="hover:underline text-gray-300"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="hover:underline text-gray-300"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:underline text-gray-300"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:underline text-gray-300"
+                  >Terms & Condition</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:underline text-gray-300"
+                  >FAQs & Help</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div>
+            <h4 class="text-white text-lg font-semibold mb-4">Contact</h4>
+            <p class="mb-2">
+              <i class="fas fa-map-marker-alt mr-2"></i>No. 24, Street
+              562,Sangkat Boeung Kak I,Khan Toul Kork,Phnom Penh, Cambodia
+            </p>
+            <p class="mb-2">
+              <i class="fas fa-phone-alt mr-2"></i>+855 717 240 181
+            </p>
+            <p class="mb-4">
+              <i class="fas fa-envelope mr-2"></i>ISTAD@gmail.com
+            </p>
+            <div class="flex space-x-3">
+              <a href="#" class="text-white hover:text-blue-400"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-white hover:text-blue-600"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-white hover:text-red-600"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="#" class="text-white hover:text-blue-500"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Newsletter -->
+          <div>
+            <h4 class="text-white text-lg font-semibold mb-4">
+              Subscribe to our Newsletter
+            </h4>
+            <p class="mb-4">
+              Subscribe now and join our growing community of learners committed
+              to lifelong education!
+            </p>
+            <form action="#" class="relative max-w-md">
+              <input
+                type="email"
+                required
+                placeholder="Your email"
+                class="w-full p-3 pr-20 rounded-md text-gray-900 focus:outline-none bg-white"
+              />
+              <button
+                type="submit"
+                class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+              >
+                <a href="#">Subscribe</a>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="bg-gray-800 py-4">
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left"
+        >
+          <p class="text-sm text-gray-400">
+            &copy;
+            <a
+              href="index.html"
+              class="border-b border-gray-500 hover:text-white"
+              >ISTAD</a
+            >, All Right Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
