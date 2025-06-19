@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>testimonial</title>
   </head>
-  <link rel="stylesheet" href="output.css" />
+  <link rel="stylesheet" href="./src/output.css" />
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -14,120 +14,74 @@
     referrerpolicy="no-referrer"
   />
   <body>
-    <nav class="sticky top-0 z-50 bg-white shadow-md py-0">
-      <div
-        class="container mx-auto flex items-center justify-between px-4 lg:px-8 h-20"
-      >
-        <a href="index.html" class="flex items-center">
-          <p class="text-2xl font-bold flex items-center">
-            <img
-              src="../img/logo-square-01.png"
-              alt="Istad Icon"
-              class="h-12 mr-2"
-            />I<span class="text-orange-500">STAD</span>
-          </p>
-        </a>
-        <button
-          type="button"
-          class="lg:hidden text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 p-2 rounded-md"
-          aria-controls="navbarCollapse"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <svg
-            class="h-6 w-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            ></path>
-          </svg>
-        </button>
-
-        <div
-          id="navbarCollapse"
-          class="hidden lg:flex lg:flex-grow lg:justify-end"
-        >
-          <div class="flex flex-col lg:flex-row items-center lg:space-x-4">
-            <a
-              href="index.html"
-              class="text-gray-800 hover:text-orange-500 py-2 lg:py-0 px-3 transition-colors duration-300 active-link"
-              >Home</a
-            >
-            <a
-              href="about.html"
-              class="text-gray-800 hover:text-orange-500 py-2 lg:py-0 px-3 transition-colors duration-300 nav-link-underline"
+    <!-- Navbar Start -->
+    <nav class="bg-white shadow sticky top-0 z-40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <a href="index.html" class="flex items-center space-x-2">
+            <img src="./img/logo-square-01.png" alt="Logo" class="h-12" />
+            <p class="text-2xl font-bold">
+              I<span class="text-orange-500">STAD</span>
+            </p>
+          </a>
+          <div class="lg:hidden">
+            <button id="menu-toggle" class="text-gray-500 focus:outline-none">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div id="navbar-menu" class="hidden lg:flex space-x-6 items-center">
+            <a href="index.html" class="text-blue-600 font-medium">Home</a>
+            <a href="about.html" class="text-gray-700 hover:text-blue-500"
               >About</a
             >
-            <a
-              href="courses.html"
-              class="text-gray-800 hover:text-orange-500 py-2 lg:py-0 px-3 transition-colors duration-300 nav-link-underline"
+            <a href="courses.html" class="text-gray-700 hover:text-blue-500"
               >Courses</a
             >
-
-            <div class="relative group py-2 lg:py-0">
+            <div class="relative group">
               <button
-                class="text-gray-800 hover:text-orange-500 px-3 flex items-center focus:outline-none group-hover:text-orange-500"
+                class="text-gray-700 hover:text-blue-500 focus:outline-none"
               >
                 Pages
-                <svg
-                  class="ml-1 w-4 h-4 transform group-hover:rotate-180 transition-transform duration-200"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 9l-7 7-7-7"
-                  ></path>
-                </svg>
               </button>
               <div
-                class="absolute hidden group-hover:block bg-white shadow-lg py-2 rounded-md mt-2 w-48 transition-all duration-300 ease-in-out origin-top-left lg:left-1/2 lg:-translate-x-1/2"
+                class="absolute hidden group-hover:block bg-white shadow-md mt-2 rounded-md py-2 z-50"
               >
-                <a
-                  href="team.html"
-                  class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors duration-200"
+                <a href="team.html" class="block px-4 py-2 hover:bg-gray-100"
                   >Our Team</a
                 >
                 <a
                   href="testimonial.html"
-                  class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors duration-200"
+                  class="block px-4 py-2 hover:bg-gray-100"
                   >Testimonial</a
                 >
               </div>
             </div>
-            <a
-              href="contact.html"
-              class="text-gray-800 hover:text-orange-500 py-2 lg:py-0 px-3 transition-colors duration-300 nav-link-underline"
+            <a href="contact.html" class="text-gray-700 hover:text-blue-500"
               >Contact</a
             >
-            <a
-              href="login.html"
-              class="text-gray-800 hover:text-orange-500 py-2 lg:py-0 px-3 transition-colors duration-300 nav-link-underline"
+            <a href="login.html" class="text-gray-700 hover:text-blue-500"
               ><i class="fa fa-user"></i
             ></a>
-            <a
-              href="#"
-              class="text-gray-800 hover:text-orange-500 py-2 lg:py-0 px-3 transition-colors duration-300"
-            >
-              <div id="google_translate_element"></div>
-            </a>
+            <div id="google_translate_element" class="ml-2"></div>
           </div>
         </div>
       </div>
     </nav>
+
     <!-- Header Start -->
-    <div class="relative py-15 mb-16 overflow-hidden">
+    <div class="relative py-20 mb-16 overflow-hidden">
       <div
         class="mx-auto py-20 px-4 text-center bg-cover bg-center bg-no-repeat"
         style="background-image: url('../img/carousel-1.jpg')"
@@ -222,7 +176,7 @@
           <p class="quote-text text-sm text-black">
            I’m amazed at the quality of the free courses available. The
             instructors are experts in their fields, and the interactive lessons
-            make learning a breeze. Thank you for this opportunity!
+            make learning a breeze. Thank you for this opportunity! 
           </p>
         </div>
 
@@ -361,7 +315,7 @@
           <p class="text-sm text-gray-400">
             &copy;
             <a
-              href="index.html"
+              href="../index.html"
               class="border-b border-gray-500 hover:text-white"
               >ISTAD</a
             >, All Right Reserved.

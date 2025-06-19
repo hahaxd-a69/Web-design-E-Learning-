@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
-    <link rel="stylesheet" href="output.css" />
-
+    <title>Contact page</title>
+    <link rel="stylesheet" href="./src/output.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -20,7 +19,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
           <a href="index.html" class="flex items-center space-x-2">
-            <img src="../img/logo-square-01.png" alt="Logo" class="h-12" />
+            <img src="./img/logo-square-01.png" alt="Logo" class="h-12" />
             <p class="text-2xl font-bold">
               I<span class="text-orange-500">STAD</span>
             </p>
@@ -43,7 +42,7 @@
             </button>
           </div>
           <div id="navbar-menu" class="hidden lg:flex space-x-6 items-center">
-            <a href="../index.html" class="text-blue-600 font-medium">Home</a>
+            <a href="index.html" class="text-blue-600 font-medium">Home</a>
             <a href="about.html" class="text-gray-700 hover:text-blue-500"
               >About</a
             >
@@ -81,121 +80,109 @@
       </div>
     </nav>
 
-    <div class="bg-blue-600 py-10 mb-10">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <div class="text-center">
-          <h1
-            class="text-4xl md:text-5xl font-bold text-white animate-slide-in-down"
-          >
-            About Us
-          </h1>
-          <nav class="mt-4" aria-label="Breadcrumb">
-            <ol
-              class="flex justify-center space-x-2 text-white text-sm md:text-base"
+    <!-- Page Header -->
+    <div class="bg-blue-600 py-12 text-white text-center">
+      <h1 class="text-4xl font-bold">Contact</h1>
+      <nav class="mt-2">
+        <ol class="inline-flex space-x-2 text-sm">
+          <li><a href="index.html" class="hover:underline">Home</a></li>
+          <li>/</li>
+          <li>Contact</li>
+        </ol>
+      </nav>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-semibold text-center mb-8">Contact Us</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Get In Touch</h3>
+            <p class="mb-6">
+              For any questions or inquiries, feel free to reach out to us!
+            </p>
+            <div class="space-y-4">
+              <div class="flex items-start gap-4">
+                <div class="bg-orange-500 text-white p-3 rounded">
+                  <i class="fa fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Office</h4>
+                  <p>
+                    No. 24, Street 562,Sangkat Boeung Kak I,Khan Toul Kork,Phnom
+                    Penh, Cambodia
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="bg-orange-500 text-white p-3 rounded">
+                  <i class="fa fa-phone-alt"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Mobile</h4>
+                  <p>+855 717240181</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="bg-orange-500 text-white p-3 rounded">
+                  <i class="fa fa-envelope-open"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Email</h4>
+                  <p>ISTAD@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <form
+              action="mailto:keertidvcorai@gmail.com"
+              method="POST"
+              enctype="text/plain"
+              class="space-y-4"
             >
-              <li>
-                <a href="../index.html" class="hover:underline text-white"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <span>/</span>
-              </li>
-              <li class="text-white font-medium" aria-current="page">About</li>
-            </ol>
-          </nav>
+              <div class="grid md:grid-cols-2 gap-4">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                  class="w-full p-3 border rounded"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                  class="w-full p-3 border rounded"
+                />
+              </div>
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                required
+                class="w-full p-3 border rounded"
+              />
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Message"
+                required
+                class="w-full p-3 border rounded"
+              ></textarea>
+              <button
+                type="submit"
+                class="bg-blue-600 text-white py-3 px-6 rounded w-full"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- About Us Header End -->
-    <main class="max-w-4xl mx-auto px-4 py-12">
-      <section class="mb-12">
-        <h2 class="text-3xl font-bold text-orange-500 mb-4">
-          Welcome to ISTAD
-        </h2>
-        <p class="mb-4">
-          At ISTAD, we believe in accessible, innovative learning experiences
-          that adapt to your schedule and learning style. Join us in embracing
-          the future of education and unlock your potential with our immersive
-          online courses.
-        </p>
-        <p>
-          Welcome to ISTAD, where learning knows no boundaries. Our mission is
-          to empower individuals worldwide through accessible and innovative
-          education. Here’s what sets us apart:
-        </p>
-      </section>
-      <section class="mb-10">
-        <h3 class="text-2xl font-semibold mb-2">Our Vision</h3>
-        <p>
-          At ISTAD, we envision a world where learning is accessible to
-          everyone, regardless of their location, background, or circumstances.
-          We strive to break barriers and make education a transformative and
-          inclusive experience for all.
-        </p>
-      </section>
-
-      <section class="mb-10">
-        <h3 class="text-2xl font-semibold mb-2">A Commitment to Excellence</h3>
-        <p>
-          We are dedicated to providing top-quality education. Our team
-          collaborates with industry experts and educators to curate courses
-          that meet the highest standards, ensuring our learners receive
-          valuable and up-to-date knowledge.
-        </p>
-      </section>
-      <section class="mb-10">
-        <h3 class="text-2xl font-semibold mb-2">Empowering Learners</h3>
-        <p>
-          We believe in the transformative power of education. ISTAD helps
-          learners discover their passions, advance their careers, and acquire
-          new skills in a dynamic and supportive environment.
-        </p>
-      </section>
-      <section class="mb-10">
-        <h3 class="text-2xl font-semibold mb-2">Innovation in Learning</h3>
-        <p>
-          Embracing technology, we offer innovative learning methods and tools.
-          From interactive modules to live sessions, we’re committed to
-          providing a cutting-edge learning experience that fosters engagement
-          and knowledge retention.
-        </p>
-      </section>
-      <section class="mb-10">
-        <h3 class="text-2xl font-semibold mb-2">Community-Centric Approach</h3>
-        <p>
-          ISTAD is more than just courses; it’s a vibrant community. We
-          encourage collaboration, discussion, and knowledge sharing among
-          learners, fostering an environment of growth and camaraderie.
-        </p>
-      </section>
-
-      <section class="mb-10">
-        <h3 class="text-2xl font-semibold mb-2">
-          Diverse and Inclusive Education
-        </h3>
-        <p>
-          We celebrate diversity in perspectives, cultures, and ideas. Our
-          diverse course offerings cater to various interests and skill levels,
-          ensuring that everyone finds a learning path that resonates with them.
-        </p>
-      </section>
-
-      <section class="mb-10">
-        <h3 class="text-2xl font-semibold mb-2">Continuous Improvement</h3>
-        <p>
-          We are always evolving. Feedback from our learners helps us
-          continually enhance our platform, ensuring it remains dynamic,
-          responsive, and aligned with the evolving needs of our users.
-        </p>
-      </section>
-
-      <p class="mt-8 text-center text-gray-600">
-        Thank you for being a part of ISTAD. Together, let’s embark on a journey
-        of lifelong learning and growth.
-      </p>
-    </main>
-
+    </section>
     <footer class="bg-gray-900 text-gray-300 pt-10 mt-10">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -235,8 +222,8 @@
           <div>
             <h4 class="text-white text-lg font-semibold mb-4">Contact</h4>
             <p class="mb-2">
-              <i class="fas fa-map-marker-alt mr-2"></i>123 Street, Bangalore,
-              Karnataka
+              <i class="fas fa-map-marker-alt mr-2"></i>No. 24, Street
+              562,Sangkat Boeung Kak I,Khan Toul Kork,Phnom Penh, Cambodia
             </p>
             <p class="mb-2">
               <i class="fas fa-phone-alt mr-2"></i>+855 717 240 181
@@ -274,7 +261,7 @@
                 type="email"
                 required
                 placeholder="Your email"
-                class="w-full p-3 pr-20 rounded-md text-gray-900 focus:outline-none"
+                class="w-full p-3 pr-20 rounded-md text-gray-900 focus:outline-none bg-white"
               />
               <button
                 type="submit"
@@ -295,7 +282,7 @@
           <p class="text-sm text-gray-400">
             &copy;
             <a
-              href="./index.html"
+              href="index.html"
               class="border-b border-gray-500 hover:text-white"
               >ISTAD</a
             >, All Right Reserved.
