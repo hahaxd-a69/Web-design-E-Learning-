@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>testimonial</title>
+    <title>Testimonial | ISTAD</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <link rel="stylesheet" href="./src/output.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <body>
+  <body class="bg-gray-100">
     <!-- Navbar Start -->
     <nav class="bg-white shadow sticky top-0 z-40">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -42,7 +42,9 @@
             </button>
           </div>
           <div id="navbar-menu" class="hidden lg:flex space-x-6 items-center">
-            <a href="index.html" class="text-gray-700 hover:text-blue-500">Home</a>
+            <a href="index.html" class="text-gray-700 hover:text-blue-500"
+              >Home</a
+            >
             <a href="about.html" class="text-gray-700 hover:text-blue-500"
               >About</a
             >
@@ -50,9 +52,7 @@
               >Courses</a
             >
             <div class="relative group">
-              <button
-                class="text-blue-600 font-medium focus:outline-none"
-              >
+              <button class="text-blue-600 font-medium focus:outline-none">
                 Pages
               </button>
               <div
@@ -81,19 +81,17 @@
     </nav>
 
     <!-- Header Start -->
-    <div class="relative py-20 mb-16 overflow-hidden">
+    <div class="relative py-5 mb-16 overflow-hidden">
       <div
         class="mx-auto py-20 px-4 text-center bg-cover bg-center bg-no-repeat"
-        style="background-image: url('../img/carousel-1.jpg')"
+        style="background-image: url('./img/carousel-1.jpg')"
       >
         <!-- Overlay for better text visibility -->
         <div class="absolute inset-0 bg-opacity-50"></div>
 
         <div class="relative z-10">
-          <h1
-            class="text-4xl sm:text-5xl md:text-6xl text-white font-bold animate__animated animate__slideInDown"
-          >
-            Our Team
+          <h1 class="text-4xl sm:text-5xl md:text-6xl text-white font-bold">
+            Testimonials
           </h1>
           <nav aria-label="breadcrumb" class="mt-4">
             <ol
@@ -103,7 +101,9 @@
                 <a href="index.html" class="hover:text-gray-300">Home</a>
               </li>
               <li>/</li>
-              <li aria-current="page" class="text-white font-semibold">Team</li>
+              <li aria-current="page" class="text-white font-semibold">
+                Testimonials
+              </li>
             </ol>
           </nav>
         </div>
@@ -111,215 +111,313 @@
     </div>
     <!-- Header End -->
 
-    <section class="testimonials py-16 px-5 text-center bg-blue-400">
-      <h2 class="text-white text-4xl font-bold mb-4">Success stories</h2>
-      <p class="text-white text-lg mb-10 max-w-2xl mx-auto">
-        Can ISTAD courses help your career? Our learners tell us how.
-      </p>
+    <!-- Testimonials Section -->
+    <section class="py-16 px-5 text-center bg-blue-600">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-white text-3xl md:text-4xl font-bold mb-4">
+          Success Stories
+        </h2>
+        <p class="text-white text-lg mb-10 max-w-2xl mx-auto">
+          Can ISTAD courses help your career? Our learners tell us how.
+        </p>
 
-      <div class="testimonial-container flex justify-center gap-5 flex-wrap">
-        <div
-          class="testimonial bg-white p-5 rounded-lg w-72 shadow-md transition-all duration-300 cursor-pointer hover:scale-105"
-        >
-          <img
-            src="../img/Vibol.jpg"
-            alt="Vibol's testimonial"
-            class="rounded-full w-20 h-20 mx-auto mb-4 object-cover"
-          />
-          <h3 class="mt-2 mb-2 text-black text-xl font-semibold">Vibol</h3>
-          <p class="quote-text text-sm text-gray-600">
-            As a working professional, finding free courses that match my
-            schedule was a game-changer. The courses are engaging, and the
-            community aspect adds immense value. Highly recommended!
-          </p>
-        </div>
-        <div
-          class="testimonial bg-white p-5 rounded-lg w-72 shadow-md transition-all duration-300 cursor-pointer hover:scale-105"
-        >
-          <img
-            src="../img/Minea.jpg"
-            alt="Vibol's testimonial"
-            class="rounded-full w-20 h-20 mx-auto mb-4 object-cover"
-          />
-          <h3 class="mt-2 mb-2 text-black text-xl font-semibold">Minea</h3>
-          <p class="quote-text text-sm text-gray-600">
-            I’m amazed at the quality of the free courses available. The
-            instructors are experts in their fields, and the interactive lessons
-            make learning a breeze. Thank you for this opportunity!
-          </p>
-        </div>
-        <div
-          class="testimonial bg-white p-5 rounded-lg w-72 shadow-md transition-all duration-300 cursor-pointer hover:scale-105"
-        >
-          <img
-            src="../img/Koemlay.jpg"
-            alt="Vibol's testimonial"
-            class="rounded-full w-20 h-20 mx-auto mb-4 object-cover"
-          />
-          <h3 class="mt-2 mb-2 text-black text-xl font-semibold">Koemlay</h3>
-          <p class="quote-text text-sm text-gray-600">
-            I’m amazed at the quality of the free courses available. The
-            instructors are experts in their fields, and the interactive lessons
-            make learning a breeze. Thank you for this opportunity!
-          </p>
-        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105"
+          >
+            <img
+              src="./img/Vibol.jpg"
+              alt="Vibol"
+              class="rounded-full w-20 h-20 mx-auto mb-4 object-cover border-4 border-blue-100"
+            />
+            <h3 class="text-xl font-semibold text-gray-800">Vibol</h3>
+            <p class="text-gray-600 mt-2 text-sm">
+              "As a working professional, finding free courses that match my
+              schedule was a game-changer. The courses are engaging, and the
+              community aspect adds immense value. Highly recommended!"
+            </p>
+          </div>
 
-        <div
-          class="testimonial bg-white p-5 rounded-lg w-72 shadow-md transition-all duration-300 cursor-pointer hover:scale-105"
-        >
-          <img
-            src="../img/Lina.jpg"
-            alt="Lina's testimonial"
-            class="rounded-full w-20 h-20 mx-auto mb-4 object-cover"
-          />
-          <h3 class="mt-2 mb-2 text-black text-xl font-semibold">Lina</h3>
-          <p class="quote-text text-sm text-black">
-           I’m amazed at the quality of the free courses available. The
-            instructors are experts in their fields, and the interactive lessons
-            make learning a breeze. Thank you for this opportunity! 
-          </p>
-        </div>
+          <!-- Testimonial 2 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105"
+          >
+            <img
+              src="./img/Minea.jpg"
+              alt="Minea"
+              class="rounded-full w-20 h-20 mx-auto mb-4 object-cover border-4 border-blue-100"
+            />
+            <h3 class="text-xl font-semibold text-gray-800">Minea</h3>
+            <p class="text-gray-600 mt-2 text-sm">
+              "I'm amazed at the quality of the free courses available. The
+              instructors are experts in their fields, and the interactive
+              lessons make learning a breeze. Thank you for this opportunity!"
+            </p>
+          </div>
 
-        <div
-          class="testimonial bg-white p-5 rounded-lg w-72 shadow-md transition-all duration-300 cursor-pointer hover:scale-105"
-        >
-          <img
-            src="../img/Sok Heng.jpg"
-            alt="Sokheng's testimonial"
-            class="rounded-full w-20 h-20 mx-auto mb-4 object-cover"
-          />
-          <h3 class="mt-2 mb-2 text-black text-xl font-semibold">Sokheng</h3>
-          <p class="quote-text text-sm text-gray-600">
-            I’m amazed at the quality of the free courses available. The
-            instructors are experts in their fields, and the interactive lessons
-            make learning a breeze. Thank you for this opportunity!
-          </p>
-        </div>
-        <div
-          class="testimonial bg-white p-5 rounded-lg w-72 shadow-md transition-all duration-300 cursor-pointer hover:scale-105"
-        >
-          <img
-            src="../img/Pee Nat.jpg"
-            alt="Pee Nat's testimonial"
-            class="rounded-full w-20 h-20 mx-auto mb-4 object-cover"
-          />
-          <h3 class="mt-2 mb-2 text-black text-xl font-semibold">Pee Nat</h3>
-          <p class="quote-text text-sm text-gray-600">
-            I’m amazed at the quality of the free courses available. The
-            instructors are experts in their fields, and the interactive lessons
-            make learning a breeze. Thank you for this opportunity!
-          </p>
-        </div>
-      </div>
+          <!-- Testimonial 3 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105"
+          >
+            <img
+              src="./img/Koemlay.jpg"
+              alt="Koemlay"
+              class="rounded-full w-20 h-20 mx-auto mb-4 object-cover border-4 border-blue-100"
+            />
+            <h3 class="text-xl font-semibold text-gray-800">Koemlay</h3>
+            <p class="text-gray-600 mt-2 text-sm">
+              "The practical approach to learning at ISTAD helped me gain
+              real-world skills that I could immediately apply at work. The
+              support from instructors and peers was exceptional."
+            </p>
+          </div>
 
-      
+          <!-- Testimonial 4 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105"
+          >
+            <img
+              src="./img/Lina.jpg"
+              alt="Lina"
+              class="rounded-full w-20 h-20 mx-auto mb-4 object-cover border-4 border-blue-100"
+            />
+            <h3 class="text-xl font-semibold text-gray-800">Lina</h3>
+            <p class="text-gray-600 mt-2 text-sm">
+              "ISTAD courses helped me transition into a new career field. The
+              comprehensive curriculum and hands-on projects gave me the
+              confidence to pursue my dream job."
+            </p>
+          </div>
+
+          <!-- Testimonial 5 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105"
+          >
+            <img
+              src="./img/Sok Heng.jpg"
+              alt="Sok Heng"
+              class="rounded-full w-20 h-20 mx-auto mb-4 object-cover border-4 border-blue-100"
+            />
+            <h3 class="text-xl font-semibold text-gray-800">Sok Heng</h3>
+            <p class="text-gray-600 mt-2 text-sm">
+              "The flexibility to learn at my own pace while still having access
+              to expert guidance made all the difference. ISTAD's courses are
+              truly designed for busy professionals."
+            </p>
+          </div>
+
+          <!-- Testimonial 6 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105"
+          >
+            <img
+              src="./img/Pee Nat.jpg"
+              alt="Pee Nat"
+              class="rounded-full w-20 h-20 mx-auto mb-4 object-cover border-4 border-blue-100"
+            />
+            <h3 class="text-xl font-semibold text-gray-800">Pee Nat</h3>
+            <p class="text-gray-600 mt-2 text-sm">
+              "I've taken many online courses, but ISTAD stands out for its
+              practical focus and supportive community. The skills I gained
+              helped me get a promotion within 6 months!"
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <footer class="bg-gray-900 text-gray-300 pt-10 mt-10">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 pt-12 pb-6">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Logo and Description -->
+          <div class="lg:col-span-1">
+            <div class="flex items-center mb-4">
+              <img
+                src="./img/logo-square-01.png"
+                alt="Logo"
+                class="h-10 mr-3"
+              />
+              <span class="text-2xl font-bold text-white"
+                >I<span class="text-orange-500">STAD</span></span
+              >
+            </div>
+            <p class="text-gray-400 mb-4">
+              Empowering learners through innovative education and technology.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://web.facebook.com/meng.si.3382"
+                class="text-gray-400 hover:text-blue-400 transition-colors"
+              >
+                <i class="fab fa-facebook-f text-lg"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-blue-400 transition-colors"
+              >
+                <i class="fab fa-twitter text-lg"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCRnaN29jwbOKE_UnxEux7wQ"
+                class="text-gray-400 hover:text-red-500 transition-colors"
+              >
+                <i class="fab fa-youtube text-lg"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-blue-600 transition-colors"
+              >
+                <i class="fab fa-linkedin-in text-lg"></i>
+              </a>
+            </div>
+          </div>
+
           <!-- Quick Links -->
           <div>
-            <h4 class="text-white text-lg font-semibold mb-4">Quick Link</h4>
-            <ul class="space-y-2">
+            <h4
+              class="text-white text-lg font-semibold mb-5 pb-2 border-b border-gray-700"
+            >
+              Quick Links
+            </h4>
+            <ul class="space-y-3">
               <li>
-                <a href="about.html" class="hover:underline text-gray-300"
-                  >About Us</a
+                <a
+                  href="about"
+                  class="text-gray-400 hover:text-white transition-colors flex items-center"
                 >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-orange-500"
+                  ></i>
+                  About Us
+                </a>
               </li>
               <li>
-                <a href="contact.html" class="hover:underline text-gray-300"
-                  >Contact Us</a
+                <a
+                  href="contact"
+                  class="text-gray-400 hover:text-white transition-colors flex items-center"
                 >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-orange-500"
+                  ></i>
+                  Contact Us
+                </a>
               </li>
               <li>
-                <a href="#" class="hover:underline text-gray-300"
-                  >Privacy Policy</a
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors flex items-center"
                 >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-orange-500"
+                  ></i>
+                  Privacy Policy
+                </a>
               </li>
               <li>
-                <a href="#" class="hover:underline text-gray-300"
-                  >Terms & Condition</a
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors flex items-center"
                 >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-orange-500"
+                  ></i>
+                  Terms & Conditions
+                </a>
               </li>
               <li>
-                <a href="#" class="hover:underline text-gray-300"
-                  >FAQs & Help</a
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors flex items-center"
                 >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-orange-500"
+                  ></i>
+                  FAQs & Help
+                </a>
               </li>
             </ul>
           </div>
 
-          <!-- Contact -->
+          <!-- Contact Info -->
           <div>
-            <h4 class="text-white text-lg font-semibold mb-4">Contact</h4>
-            <p class="mb-2">
-              <i class="fas fa-map-marker-alt mr-2"></i>123 Street, Bangalore,
-              Karnataka
-            </p>
-            <p class="mb-2">
-              <i class="fas fa-phone-alt mr-2"></i>+855 717 240 181
-            </p>
-            <p class="mb-4">
-              <i class="fas fa-envelope mr-2"></i>ISTAD@gmail.com
-            </p>
-            <div class="flex space-x-3">
-              <a href="#" class="text-white hover:text-blue-400"
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a href="#" class="text-white hover:text-blue-600"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a href="#" class="text-white hover:text-red-600"
-                ><i class="fab fa-youtube"></i
-              ></a>
-              <a href="#" class="text-white hover:text-blue-500"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
+            <h4
+              class="text-white text-lg font-semibold mb-5 pb-2 border-b border-gray-700"
+            >
+              Contact Us
+            </h4>
+            <div class="space-y-3">
+              <div class="flex items-start">
+                <i class="fas fa-map-marker-alt mt-1 mr-3 text-orange-500"></i>
+                <p class="text-gray-400">
+                  No. 24, Street 562, Sangkat Boeung Kak I, Khan Toul Kork,
+                  Phnom Penh, Cambodia
+                </p>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-phone-alt mr-3 text-orange-500"></i>
+                <p class="text-gray-400">+855 717 240 181</p>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-envelope mr-3 text-orange-500"></i>
+                <p class="text-gray-400">ISTAD@gmail.com</p>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-clock mr-3 text-orange-500"></i>
+                <p class="text-gray-400">Mon-Fri: 8:00 AM - 5:00 PM</p>
+              </div>
             </div>
           </div>
 
           <!-- Newsletter -->
           <div>
-            <h4 class="text-white text-lg font-semibold mb-4">
-              Subscribe to our Newsletter
+            <h4
+              class="text-white text-lg font-semibold mb-5 pb-2 border-b border-gray-700"
+            >
+              Newsletter
             </h4>
-            <p class="mb-4">
-              Subscribe now and join our growing community of learners committed
-              to lifelong education!
+            <p class="text-gray-400 mb-4">
+              Get the latest updates on courses and events straight to your
+              inbox.
             </p>
-            <form action="#" class="relative max-w-md">
+            <form class="flex flex-col space-y-3">
               <input
                 type="email"
+                placeholder="Your email address"
+                class="px-4 py-3 rounded-md bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 text-white"
                 required
-                placeholder="Your email"
-                class="w-full p-3 pr-20 rounded-md text-gray-900 focus:outline-none bg-white"
               />
               <button
                 type="submit"
-                class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+                class="bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-6 rounded-md transition-colors"
               >
-                <a href="#">Subscribe</a>
+                Subscribe
               </button>
             </form>
           </div>
         </div>
-      </div>
 
-      <!-- Copyright -->
-      <div class="bg-gray-800 py-4">
-        <div
-          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left"
-        >
-          <p class="text-sm text-gray-400">
-            &copy;
-            <a
-              href="../index.html"
-              class="border-b border-gray-500 hover:text-white"
-              >ISTAD</a
-            >, All Right Reserved.
-          </p>
+        <!-- Copyright -->
+        <div class="border-t border-gray-800 mt-12 pt-6">
+          <div
+            class="flex flex-col md:flex-row justify-between items-center text-center md:text-left"
+          >
+            <p class="text-gray-500 text-sm">
+              &copy; 2025 ISTAD. All rights reserved.
+            </p>
+            <div class="flex space-x-4 mt-3 md:mt-0">
+              <a href="#" class="text-gray-500 hover:text-gray-300 text-sm"
+                >Privacy Policy</a
+              >
+              <a href="#" class="text-gray-500 hover:text-gray-300 text-sm"
+                >Terms of Service</a
+              >
+              <a href="#" class="text-gray-500 hover:text-gray-300 text-sm"
+                >Sitemap</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </footer>

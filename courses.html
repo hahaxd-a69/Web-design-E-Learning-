@@ -6,139 +6,75 @@
     <title>E-learning</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
   <body class="bg-gray-50">
-    <!-- Animated Header -->
-    <header
-      class="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full bg-white border-b border-gray-200 shadow-sm animate-fade-in"
-    >
-      <nav
-        class="relative max-w-[85rem] w-full mx-auto md:flex md:items-center md:justify-between md:gap-3 py-2 px-4 sm:px-6 lg:px-8"
-      >
-        <div class="flex justify-between items-center gap-x-1">
-          <a
-            class="flex-none font-semibold text-xl text-black focus:outline-none focus:opacity-80 hover:text-orange-500 transition-colors"
-            href="#"
-            aria-label="Brand"
-            >E-learning</a
-          >
-
-          <!-- Mobile Menu Button -->
-          <button
-            type="button"
-            class="hs-collapse-toggle md:hidden relative size-9 flex justify-center items-center font-medium text-sm rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
-            id="hs-header-base-collapse"
-            aria-expanded="false"
-            aria-controls="hs-header-base"
-            aria-label="Toggle navigation"
-            data-hs-collapse="#hs-header-base"
-          >
-            <svg
-              class="hs-collapse-open:hidden size-4"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <line x1="3" x2="21" y1="6" y2="6" />
-              <line x1="3" x2="21" y1="12" y2="12" />
-              <line x1="3" x2="21" y1="18" y2="18" />
-            </svg>
-            <svg
-              class="hs-collapse-open:block shrink-0 hidden size-4"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M18 6 6 18" />
-              <path d="m6 6 12 12" />
-            </svg>
-          </button>
-        </div>
-
-        <!-- Navigation Links -->
-        <div
-          id="hs-header-base"
-          class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block"
-          aria-labelledby="hs-header-base-collapse"
-        >
-          <div
-            class="overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300"
-          >
-            <div
-              class="py-2 md:py-0 flex flex-col md:flex-row md:items-center gap-0.5 md:gap-1"
-            >
-              <div class="grow">
-                <div
-                  class="flex flex-col md:flex-row md:justify-end md:items-center gap-0.5 md:gap-1"
-                >
-                  <a
-                    class="p-2 flex items-center text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 rounded-lg focus:outline-none focus:bg-gray-200 transition-colors"
-                    href="index.html"
-                    aria-current="page"
-                  >
-                    HOME
-                  </a>
-                  <a
-                    class="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 transition-colors"
-                    href="about.html"
-                  >
-                    ABOUT
-                  </a>
-                  <a
-                    class="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 transition-colors"
-                    href="courses.html"
-                  >
-                    COURSES
-                  </a>
-                  <a
-                    class="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 transition-colors"
-                    href="contact.html"
-                  >
-                    CONTACT
-                  </a>
-                </div>
-              </div>
-
-              <div class="my-2 md:my-0 md:mx-2">
-                <div
-                  class="w-full h-px md:w-px md:h-4 bg-gray-100 md:bg-gray-300"
-                ></div>
-              </div>
-
-              <!-- Auth Buttons -->
-              <div
-                class="flex flex-wrap items-center gap-x-1.5 animate-slide-up"
+    <!-- Navbar Start -->
+    <nav class="bg-white shadow sticky top-0 z-40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <a href="index.html" class="flex items-center space-x-2">
+            <img src="./img/logo-square-01.png" alt="Logo" class="h-12" />
+            <p class="text-2xl font-bold">
+              I<span class="text-orange-500">STAD</span>
+            </p>
+          </a>
+          <div class="lg:hidden">
+            <button id="menu-toggle" class="text-gray-500 focus:outline-none">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
               >
-                <a
-                  class="py-[7px] px-2.5 inline-flex items-center font-medium text-sm rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 hover:shadow-md transition-all disabled:opacity-50 disabled:pointer-events-none focus:outline-none"
-                  href="login.html"
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div id="navbar-menu" class="hidden lg:flex space-x-6 items-center">
+            <a href="index.html" class="text-blue-600 font-medium">Home</a>
+            <a href="about.html" class="text-gray-700 hover:text-blue-500"
+              >About</a
+            >
+            <a href="courses.html" class="text-gray-700 hover:text-blue-500"
+              >Courses</a
+            >
+            <div class="relative group">
+              <button
+                class="text-gray-700 hover:text-blue-500 focus:outline-none"
+              >
+                Pages
+              </button>
+              <div
+                class="absolute hidden group-hover:block bg-white shadow-md mt-2 rounded-md py-2 z-50"
+              >
+                <a href="team.html" class="block px-4 py-2 hover:bg-gray-100"
+                  >Our Team</a
                 >
-                  SIGN IN
-                </a>
                 <a
-                  class="py-2 px-2.5 inline-flex items-center font-medium text-sm rounded-lg bg-orange-500 text-white hover:bg-orange-600 focus:outline-none hover:shadow-md transition-all"
-                  href="login.html"
+                  href="testimonial.html"
+                  class="block px-4 py-2 hover:bg-gray-100"
+                  >Testimonial</a
                 >
-                  GET STARTED
-                </a>
               </div>
             </div>
+            <a href="contact.html" class="text-gray-700 hover:text-blue-500"
+              >Contact</a
+            >
+            <a href="login.html" class="text-gray-700 hover:text-blue-500"
+              ><i class="fa fa-user"></i
+            ></a>
+            <div id="google_translate_element" class="ml-2"></div>
           </div>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+
 
     <!-- Hero Section with Animation -->
     <section
@@ -331,7 +267,7 @@
               </div>
               <div class="flex justify-between items-center mt-4">
                 <span class="text-sm text-gray-600">⏱️ 2.0 Hrs</span>
-                <span class="text-sm font-semibold">₹ 0</span>
+                <span class="text-sm font-semibold">$ 0</span>
               </div>
               <a
                 href="#"
@@ -369,7 +305,7 @@
               </div>
               <div class="flex justify-between items-center mt-4">
                 <span class="text-sm text-gray-600">⏱️ 8.0 Hrs</span>
-                <span class="text-sm font-semibold">₹ 599</span>
+                <span class="text-sm font-semibold">$ 599</span>
               </div>
               <a
                 href="#"
@@ -405,7 +341,7 @@
               </div>
               <div class="flex justify-between items-center mt-4">
                 <span class="text-sm text-gray-600">⏱️ 3.5 Hrs</span>
-                <span class="text-sm font-semibold">₹ 0</span>
+                <span class="text-sm font-semibold">$ 0</span>
               </div>
               <a
                 href="#"
@@ -441,7 +377,7 @@
               </div>
               <div class="flex justify-between items-center mt-4">
                 <span class="text-sm text-gray-600">⏱️ 7.0 Hrs</span>
-                <span class="text-sm font-semibold">₹ 549</span>
+                <span class="text-sm font-semibold">$ 549</span>
               </div>
               <a
                 href="#"
@@ -479,7 +415,7 @@
               </div>
               <div class="flex justify-between items-center mt-4">
                 <span class="text-sm text-gray-600">⏱️ 4.5 Hrs</span>
-                <span class="text-sm font-semibold">₹ 0</span>
+                <span class="text-sm font-semibold">$ 0</span>
               </div>
               <a
                 href="#"
@@ -516,7 +452,7 @@
               </div>
               <div class="flex justify-between items-center mt-4">
                 <span class="text-sm text-gray-600">⏱️ 4.0 Hrs</span>
-                <span class="text-sm font-semibold">₹ 199</span>
+                <span class="text-sm font-semibold">$ 199</span>
               </div>
               <a
                 href="#"
@@ -553,7 +489,7 @@
               </div>
               <div class="flex justify-between items-center mt-4">
                 <span class="text-sm text-gray-600">⏱️ 2.5 Hrs</span>
-                <span class="text-sm font-semibold">₹ 0</span>
+                <span class="text-sm font-semibold">$ 0</span>
               </div>
               <a
                 href="#"
@@ -588,7 +524,7 @@
               </div>
               <div class="flex justify-between items-center mt-4">
                 <span class="text-sm text-gray-600">⏱️ 3.0 Hrs</span>
-                <span class="text-sm font-semibold">₹ 299</span>
+                <span class="text-sm font-semibold">$ 299</span>
               </div>
               <a
                 href="#"
@@ -622,133 +558,200 @@
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
-      <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div>
-            <h3 class="text-xl font-bold mb-4">E-learning</h3>
-            <p class="text-gray-400">
-              Learn new skills with our expert instructors and advance your
-              career.
-            </p>
-          </div>
-          <div>
-            <h4 class="font-semibold mb-4">Courses</h4>
-            <ul class="space-y-2">
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >Front End Development - CSS</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >HTML Course for Beginners</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >Advanced JavaScript</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >Python Programming</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="font-semibold mb-4">Company</h4>
-            <ul class="space-y-2">
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >About Us</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >Careers</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >Blog</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="font-semibold mb-4">Connect</h4>
-            <div class="flex space-x-4">
-             <a 
-                href="https://web.facebook.com/heng.jasmine.263480" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                class="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+        <!-- Footer Start -->
+    <footer class="bg-gray-900 text-gray-300 pt-12 pb-6">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Logo and Description -->
+          <div class="lg:col-span-1">
+            <div class="flex items-center mb-4">
+              <img
+                src="./img/logo-square-01.png"
+                alt="Logo"
+                class="h-10 mr-3"
+              />
+              <span class="text-2xl font-bold text-white"
+                >I<span class="text-orange-500">STAD</span></span
               >
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
-                </svg>
-                Facebook
-              </a>
-                  <path
-                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
-                  ></path>
-                </svg>
-              </a>
-              <a 
-                  <a 
-                  href="https://web.telegram.org/a/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  class="inline-flex items-center gap-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.14-.26.258-.517.258l.213-3.053 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/>
-                  </svg>
-                  Telegram
-                </a>
+            </div>
+            <p class="text-gray-400 mb-4">
+              Empowering learners through innovative education and technology.
+            </p>
+            <div class="flex space-x-4">
               <a
-                  <path
-                    fill-rule="evenodd"
-                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06-4.123 0-.427-.013-.93-.061-1.372-.048-.519-.173-.93-.343-1.236a2.37 2.37 0 00-.827-.809c-.318-.168-.724-.26-1.236-.314-.442-.048-.945-.06-1.372-.06h-.08c-2.643 0-2.987.012-4.043.06-1.064.049-1.791.218-2.427.465a4.902 4.902 0 01-1.772 1.153 4.902 4.902 0 01-1.153 1.772c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06-4.123 0-.427.013-.93.061-1.372.048-.519.173-.93.343-1.236.21-.372.479-.66.827-.809.318-.168.724-.26 1.236-.314.442-.048.945-.06 1.372-.06h.08c2.643 0 2.987.012 4.043.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123 0 .427-.013.93-.061 1.372zM12 6.44a5.56 5.56 0 100 11.12 5.56 5.56 0 000-11.12zm0 1.8a3.76 3.76 0 110 7.52 3.76 3.76 0 010-7.52zM18.56 5.44a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
+                href="https://web.facebook.com/meng.si.3382"
+                class="text-gray-400 hover:text-blue-400 transition-colors"
+              >
+                <i class="fab fa-facebook-f text-lg"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-blue-400 transition-colors"
+              >
+                <i class="fab fa-twitter text-lg"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCRnaN29jwbOKE_UnxEux7wQ"
+                class="text-gray-400 hover:text-red-500 transition-colors"
+              >
+                <i class="fab fa-youtube text-lg"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-blue-600 transition-colors"
+              >
+                <i class="fab fa-linkedin-in text-lg"></i>
               </a>
             </div>
           </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h4
+              class="text-white text-lg font-semibold mb-5 pb-2 border-b border-gray-700"
+            >
+              Quick Links
+            </h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="about.html"
+                  class="text-gray-400 hover:text-white transition-colors flex items-center"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-orange-500"
+                  ></i>
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-gray-400 hover:text-white transition-colors flex items-center"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-orange-500"
+                  ></i>
+                  Contact Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors flex items-center"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-orange-500"
+                  ></i>
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors flex items-center"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-orange-500"
+                  ></i>
+                  Terms & Conditions
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors flex items-center"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-orange-500"
+                  ></i>
+                  FAQs & Help
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div>
+            <h4
+              class="text-white text-lg font-semibold mb-5 pb-2 border-b border-gray-700"
+            >
+              Contact Us
+            </h4>
+            <div class="space-y-3">
+              <div class="flex items-start">
+                <i class="fas fa-map-marker-alt mt-1 mr-3 text-orange-500"></i>
+                <p class="text-gray-400">
+                  No. 24, Street 562, Sangkat Boeung Kak I, Khan Toul Kork,
+                  Phnom Penh, Cambodia
+                </p>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-phone-alt mr-3 text-orange-500"></i>
+                <p class="text-gray-400">+855 717 240 181</p>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-envelope mr-3 text-orange-500"></i>
+                <p class="text-gray-400">ISTAD@gmail.com</p>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-clock mr-3 text-orange-500"></i>
+                <p class="text-gray-400">Mon-Fri: 8:00 AM - 5:00 PM</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Newsletter -->
+          <div>
+            <h4
+              class="text-white text-lg font-semibold mb-5 pb-2 border-b border-gray-700"
+            >
+              Newsletter
+            </h4>
+            <p class="text-gray-400 mb-4">
+              Get the latest updates on courses and events straight to your
+              inbox.
+            </p>
+            <form class="flex flex-col space-y-3">
+              <input
+                type="email"
+                placeholder="Your email address"
+                class="px-4 py-3 rounded-md bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 text-white"
+                required
+              />
+              <button
+                type="submit"
+                class="bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-6 rounded-md transition-colors"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
         </div>
-        <div
-          class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400"
-        >
-          <p>© 2025 E-learning. All rights reserved.</p>
+
+        <!-- Copyright -->
+        <div class="border-t border-gray-800 mt-12 pt-6">
+          <div
+            class="flex flex-col md:flex-row justify-between items-center text-center md:text-left"
+          >
+            <p class="text-gray-500 text-sm">
+              &copy; 2025 ISTAD. All rights reserved.
+            </p>
+            <div class="flex space-x-4 mt-3 md:mt-0">
+              <a href="#" class="text-gray-500 hover:text-gray-300 text-sm"
+                >Privacy Policy</a
+              >
+              <a href="#" class="text-gray-500 hover:text-gray-300 text-sm"
+                >Terms of Service</a
+              >
+              <a href="#" class="text-gray-500 hover:text-gray-300 text-sm"
+                >Sitemap</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </footer>
-
    
   </body>
 </html>
