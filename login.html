@@ -42,13 +42,34 @@
     </header>
 
     <!-- Header -->
-    <section class="bg-blue-600 py-10 text-white text-center">
-      <h1 class="text-4xl font-bold mb-2">Login</h1>
-      <nav class="text-sm">
-        <a href="index.html" class="underline">Home</a> / <span>Login</span>
-      </nav>
-    </section>
+    <div class="relative py-0 mb-5 overflow-hidden">
+      <div
+        class="mx-auto py-20 px-4 text-center bg-cover bg-center bg-no-repeat"
+        style="background-image: url('./img/carousel-1.jpg')"
+      >
+        <!-- Overlay for better text visibility -->
+        <div class="absolute inset-0 bg-opacity-50"></div>
 
+        <div class="relative z-10">
+          <h1 class="text-4xl sm:text-5xl md:text-6xl text-white font-bold">
+            Login
+          </h1>
+          <nav aria-label="breadcrumb" class="mt-4">
+            <ol
+              class="flex justify-center space-x-2 text-white text-sm sm:text-base"
+            >
+              <li>
+                <a href="index.html" class="hover:text-gray-300">Home</a>
+              </li>
+              <li>/</li>
+              <li aria-current="page" class="text-white font-semibold">
+                Login
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
     <!-- Login Form -->
     <section class="py-12">
       <div class="max-w-md mx-auto bg-white shadow-md rounded p-8">
@@ -157,11 +178,5 @@
         Rights Reserved.
       </div>
     </footer>
-
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/your-fontawesome-kit.js"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

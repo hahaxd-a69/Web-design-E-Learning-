@@ -81,15 +81,33 @@
     </nav>
 
     <!-- Page Header -->
-    <div class="bg-blue-600 py-12 text-white text-center">
-      <h1 class="text-4xl font-bold">Contact</h1>
-      <nav class="mt-2">
-        <ol class="inline-flex space-x-2 text-sm">
-          <li><a href="index.html" class="hover:underline">Home</a></li>
-          <li>/</li>
-          <li>Contact</li>
-        </ol>
-      </nav>
+    <div class="relative py-2 mb-9 overflow-hidden">
+      <div
+        class="mx-auto py-20 px-4 text-center bg-cover bg-center bg-no-repeat"
+        style="background-image: url('./img/carousel-1.jpg')"
+      >
+        <!-- Overlay for better text visibility -->
+        <div class="absolute inset-0 bg-opacity-50"></div>
+
+        <div class="relative z-10">
+          <h1 class="text-4xl sm:text-5xl md:text-6xl text-white font-bold">
+            Contact
+          </h1>
+          <nav aria-label="breadcrumb" class="mt-4">
+            <ol
+              class="flex justify-center space-x-2 text-white text-sm sm:text-base"
+            >
+              <li>
+                <a href="index.html" class="hover:text-gray-300">Home</a>
+              </li>
+              <li>/</li>
+              <li aria-current="page" class="text-white font-semibold">
+                Contact
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
     </div>
 
     <!-- Contact Section -->
