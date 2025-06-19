@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
     <link rel="stylesheet" href="./src/output.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -13,20 +13,65 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <style>
+      /* Custom animation delays */
+      .animate-delay-100 {
+        animation-delay: 100ms;
+      }
+      .animate-delay-200 {
+        animation-delay: 200ms;
+      }
+      .animate-delay-300 {
+        animation-delay: 300ms;
+      }
+      .animate-delay-400 {
+        animation-delay: 400ms;
+      }
+      .animate-delay-500 {
+        animation-delay: 500ms;
+      }
+
+      /* Hover animations */
+      .hover-grow {
+        transition: transform 0.3s ease;
+      }
+      .hover-grow:hover {
+        transform: scale(1.03);
+      }
+
+      /* Pulse animation for CTA */
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+      }
+      .animate-pulse {
+        animation: pulse 2s infinite;
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar Start -->
-    <nav class="bg-white shadow sticky top-0 z-40">
+    <nav
+      class="bg-white shadow sticky top-0 z-40 animate__animated animate__fadeInDown"
+    >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
-          <a href="index.html" class="flex items-center space-x-2">
+          <a href="index.html" class="flex items-center space-x-2 hover-grow">
             <img src="./img/logo-square-01.png" alt="Logo" class="h-12" />
             <p class="text-2xl font-bold">
               I<span class="text-orange-500">STAD</span>
             </p>
           </a>
           <div class="lg:hidden">
-            <button id="menu-toggle" class="text-gray-500 focus:outline-none">
+            <button
+              id="menu-toggle"
+              class="text-gray-500 focus:outline-none hover:scale-110 transition-transform"
+            >
               <svg
                 class="w-6 h-6"
                 fill="none"
@@ -43,39 +88,53 @@
             </button>
           </div>
           <div id="navbar-menu" class="hidden lg:flex space-x-6 items-center">
-            <a href="index.html" class="text-gray-700 hover:text-blue-500"
+            <a
+              href="index.html"
+              class="text-gray-700 hover:text-blue-500 transition-colors hover:scale-105"
               >Home</a
             >
-            <a href="about.html" class="text-blue-600 font-medium">About</a>
-            <a href="courses.html" class="text-gray-700 hover:text-blue-500"
+            <a
+              href="about.html"
+              class="text-blue-600 font-medium hover:scale-105 transition-transform"
+              >About</a
+            >
+            <a
+              href="courses.html"
+              class="text-gray-700 hover:text-blue-500 transition-colors hover:scale-105"
               >Courses</a
             >
             <div class="relative group">
               <button
-                class="text-gray-700 hover:text-blue-500 focus:outline-none"
+                class="text-gray-700 hover:text-blue-500 focus:outline-none transition-colors hover:scale-105"
               >
                 Pages
               </button>
               <div
-                class="absolute hidden group-hover:block bg-white shadow-md mt-2 rounded-md py-2 z-50"
+                class="absolute hidden group-hover:block bg-white shadow-md mt-2 rounded-md py-2 z-50 animate__animated animate__fadeIn"
               >
-                <a href="team.html" class="block px-4 py-2 hover:bg-gray-100"
+                <a
+                  href="team.html"
+                  class="block px-4 py-2 hover:bg-gray-100 transition-colors hover:translate-x-1"
                   >Our Team</a
                 >
                 <a
                   href="testimonial.html"
-                  class="block px-4 py-2 hover:bg-gray-100"
+                  class="block px-4 py-2 hover:bg-gray-100 transition-colors hover:translate-x-1"
                   >Testimonial</a
                 >
               </div>
             </div>
-            <a href="contact.html" class="text-gray-700 hover:text-blue-500"
+            <a
+              href="contact.html"
+              class="text-gray-700 hover:text-blue-500 transition-colors hover:scale-105"
               >Contact</a
             >
-            <a href="login.html" class="text-gray-700 hover:text-blue-500"
-              ><i class="fa fa-user"></i
-            ></a>
-            <div id="google_translate_element" class="ml-2"></div>
+            <a
+              href="login.html"
+              class="text-gray-700 hover:text-blue-500 transition-colors hover:scale-110"
+            >
+              <i class="fa fa-user"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -88,18 +147,27 @@
         style="background-image: url('./img/carousel-1.jpg')"
       >
         <!-- Overlay for better text visibility -->
-        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="absolute inset-0 bg-opacity-50"></div>
 
         <div class="relative z-10">
-          <h1 class="text-4xl sm:text-5xl md:text-6xl text-white font-bold">
+          <h1
+            class="text-4xl sm:text-5xl md:text-6xl text-white font-bold animate__animated animate__fadeInDown"
+          >
             About Us
           </h1>
-          <nav aria-label="breadcrumb" class="mt-4">
+          <nav
+            aria-label="breadcrumb"
+            class="mt-4 animate__animated animate__fadeIn animate-delay-100"
+          >
             <ol
               class="flex justify-center space-x-2 text-white text-sm sm:text-base"
             >
               <li>
-                <a href="index.html" class="hover:text-gray-300">Home</a>
+                <a
+                  href="index.html"
+                  class="hover:text-gray-300 transition-colors"
+                  >Home</a
+                >
               </li>
               <li>/</li>
               <li aria-current="page" class="text-white font-semibold">
@@ -113,18 +181,24 @@
     <!-- Header End -->
 
     <main class="max-w-4xl mx-auto px-4 sm:px-6 py-8">
-      <section class="mb-12 text-center">
-        <h2 class="text-3xl font-bold text-orange-500 mb-6">
+      <section class="mb-12 text-center animate__animated animate__fadeIn">
+        <h2
+          class="text-3xl font-bold text-orange-500 mb-6 animate__animated animate__pulse animate__infinite animate__slower"
+        >
           Welcome to ISTAD
         </h2>
         <div class="max-w-3xl mx-auto">
-          <p class="mb-6 text-lg text-gray-700">
+          <p
+            class="mb-6 text-lg text-gray-700 animate__animated animate__fadeInUp animate-delay-100"
+          >
             At ISTAD, we believe in accessible, innovative learning experiences
             that adapt to your schedule and learning style. Join us in embracing
             the future of education and unlock your potential with our immersive
             online courses.
           </p>
-          <p class="text-lg text-gray-700">
+          <p
+            class="text-lg text-gray-700 animate__animated animate__fadeInUp animate-delay-200"
+          >
             Welcome to ISTAD, where learning knows no boundaries. Our mission is
             to empower individuals worldwide through accessible and innovative
             education.
@@ -133,9 +207,14 @@
       </section>
 
       <div class="grid md:grid-cols-2 gap-8 mb-12">
-        <div class="bg-white p-6 rounded-lg shadow-md">
+        <!-- Vision Card -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-md hover-grow animate__animated animate__fadeInLeft animate-delay-100"
+        >
           <div class="flex items-center mb-4">
-            <div class="bg-orange-100 p-3 rounded-full mr-4">
+            <div
+              class="bg-orange-100 p-3 rounded-full mr-4 animate__animated animate__pulse animate__infinite animate__slower"
+            >
               <i class="fas fa-eye text-orange-500 text-xl"></i>
             </div>
             <h3 class="text-xl font-semibold">Our Vision</h3>
@@ -147,9 +226,14 @@
           </p>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-md">
+        <!-- Excellence Card -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-md hover-grow animate__animated animate__fadeInRight animate-delay-100"
+        >
           <div class="flex items-center mb-4">
-            <div class="bg-orange-100 p-3 rounded-full mr-4">
+            <div
+              class="bg-orange-100 p-3 rounded-full mr-4 animate__animated animate__pulse animate__infinite animate__slower"
+            >
               <i class="fas fa-medal text-orange-500 text-xl"></i>
             </div>
             <h3 class="text-xl font-semibold">Commitment to Excellence</h3>
@@ -161,9 +245,14 @@
           </p>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-md">
+        <!-- Empowering Card -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-md hover-grow animate__animated animate__fadeInLeft animate-delay-200"
+        >
           <div class="flex items-center mb-4">
-            <div class="bg-orange-100 p-3 rounded-full mr-4">
+            <div
+              class="bg-orange-100 p-3 rounded-full mr-4 animate__animated animate__pulse animate__infinite animate__slower"
+            >
               <i class="fas fa-lightbulb text-orange-500 text-xl"></i>
             </div>
             <h3 class="text-xl font-semibold">Empowering Learners</h3>
@@ -175,9 +264,14 @@
           </p>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-md">
+        <!-- Innovation Card -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-md hover-grow animate__animated animate__fadeInRight animate-delay-200"
+        >
           <div class="flex items-center mb-4">
-            <div class="bg-orange-100 p-3 rounded-full mr-4">
+            <div
+              class="bg-orange-100 p-3 rounded-full mr-4 animate__animated animate__pulse animate__infinite animate__slower"
+            >
               <i class="fas fa-cogs text-orange-500 text-xl"></i>
             </div>
             <h3 class="text-xl font-semibold">Innovation in Learning</h3>
@@ -191,52 +285,132 @@
       </div>
 
       <div class="mb-12">
-        <div class="bg-white p-8 rounded-lg shadow-md mb-8">
-          <h3 class="text-2xl font-semibold mb-4 text-orange-500">
+        <div
+          class="bg-white p-8 rounded-lg shadow-md mb-8 hover-grow animate__animated animate__fadeInUp animate-delay-300"
+        >
+          <h3
+            class="text-2xl font-semibold mb-4 text-orange-500 animate__animated animate__fadeIn"
+          >
             Community-Centric Approach
           </h3>
-          <p class="text-gray-700 mb-4">
+          <p
+            class="text-gray-700 mb-4 animate__animated animate__fadeIn animate-delay-100"
+          >
             ISTAD is more than just courses; it's a vibrant community. We
             encourage collaboration, discussion, and knowledge sharing among
             learners, fostering growth and camaraderie.
           </p>
-          <div class="flex justify-center my-6">
-            <div class="w-24 h-1 bg-orange-500 rounded-full"></div>
+          <div
+            class="flex justify-center my-6 animate__animated animate__fadeIn animate-delay-200"
+          >
+            <div
+              class="w-24 h-1 bg-orange-500 rounded-full animate__animated animate__pulse animate__infinite"
+            ></div>
           </div>
-          <h3 class="text-2xl font-semibold mb-4 text-orange-500">
+          <h3
+            class="text-2xl font-semibold mb-4 text-orange-500 animate__animated animate__fadeIn animate-delay-300"
+          >
             Diverse and Inclusive Education
           </h3>
-          <p class="text-gray-700 mb-4">
+          <p
+            class="text-gray-700 mb-4 animate__animated animate__fadeIn animate-delay-400"
+          >
             We celebrate diversity in perspectives, cultures, and ideas. Our
             courses cater to various interests and skill levels, ensuring
             everyone finds a suitable learning path.
           </p>
-          <div class="flex justify-center my-6">
-            <div class="w-24 h-1 bg-orange-500 rounded-full"></div>
+          <div
+            class="flex justify-center my-6 animate__animated animate__fadeIn animate-delay-500"
+          >
+            <div
+              class="w-24 h-1 bg-orange-500 rounded-full animate__animated animate__pulse animate__infinite"
+            ></div>
           </div>
-          <h3 class="text-2xl font-semibold mb-4 text-orange-500">
+          <h3
+            class="text-2xl font-semibold mb-4 text-orange-500 animate__animated animate__fadeIn animate-delay-600"
+          >
             Continuous Improvement
           </h3>
-          <p class="text-gray-700">
+          <p
+            class="text-gray-700 animate__animated animate__fadeIn animate-delay-700"
+          >
             We are always evolving. Learner feedback helps us enhance our
             platform, ensuring it remains dynamic and responsive to user needs.
           </p>
         </div>
 
-        <p class="text-center text-lg text-gray-600 italic mt-8">
+        <p
+          class="text-center text-lg text-gray-600 italic mt-8 animate__animated animate__fadeInUp animate-delay-500"
+        >
           "Thank you for being part of ISTAD. Together, let's embark on a
           journey of lifelong learning and growth."
         </p>
       </div>
+
+      <!-- Stats Section -->
+      <div
+        class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 animate__animated animate__fadeInUp animate-delay-300"
+      >
+        <div class="bg-white p-6 rounded-lg shadow text-center hover-grow">
+          <div
+            class="text-4xl font-bold text-orange-500 mb-2 animate-count"
+            data-target="10000"
+          >
+            0
+          </div>
+          <div class="text-gray-600">Students Enrolled</div>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow text-center hover-grow">
+          <div
+            class="text-4xl font-bold text-orange-500 mb-2 animate-count"
+            data-target="50"
+          >
+            0
+          </div>
+          <div class="text-gray-600">Courses Available</div>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow text-center hover-grow">
+          <div
+            class="text-4xl font-bold text-orange-500 mb-2 animate-count"
+            data-target="98"
+          >
+            0
+          </div>
+          <div class="text-gray-600">Success Rate</div>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow text-center hover-grow">
+          <div
+            class="text-4xl font-bold text-orange-500 mb-2 animate-count"
+            data-target="25"
+          >
+            0
+          </div>
+          <div class="text-gray-600">Expert Instructors</div>
+        </div>
+      </div>
+
+      <!-- CTA Section -->
+      <div
+        class="text-center mb-12 animate__animated animate__zoomIn animate-delay-500"
+      >
+        <a
+          href="signup.html"
+          class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-full shadow-lg animate-pulse transition-all duration-300"
+        >
+          Join Our Community Today
+        </a>
+      </div>
     </main>
 
     <!-- Footer Start -->
-    <footer class="bg-gray-900 text-gray-300 pt-12 pb-6">
+    <footer
+      class="bg-gray-900 text-gray-300 pt-12 pb-6 animate__animated animate__fadeInUp"
+    >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <!-- Logo and Description -->
           <div class="lg:col-span-1">
-            <div class="flex items-center mb-4">
+            <div class="flex items-center mb-4 hover-grow">
               <img
                 src="./img/logo-square-01.png"
                 alt="Logo"
@@ -252,25 +426,25 @@
             <div class="flex space-x-4">
               <a
                 href="https://web.facebook.com/meng.si.3382"
-                class="text-gray-400 hover:text-blue-400 transition-colors"
+                class="text-gray-400 hover:text-blue-400 transition-colors hover:scale-125"
               >
                 <i class="fab fa-facebook-f text-lg"></i>
               </a>
               <a
                 href="#"
-                class="text-gray-400 hover:text-blue-400 transition-colors"
+                class="text-gray-400 hover:text-blue-400 transition-colors hover:scale-125"
               >
                 <i class="fab fa-twitter text-lg"></i>
               </a>
               <a
                 href="https://www.youtube.com/channel/UCRnaN29jwbOKE_UnxEux7wQ"
-                class="text-gray-400 hover:text-red-500 transition-colors"
+                class="text-gray-400 hover:text-red-500 transition-colors hover:scale-125"
               >
                 <i class="fab fa-youtube text-lg"></i>
               </a>
               <a
                 href="#"
-                class="text-gray-400 hover:text-blue-600 transition-colors"
+                class="text-gray-400 hover:text-blue-600 transition-colors hover:scale-125"
               >
                 <i class="fab fa-linkedin-in text-lg"></i>
               </a>
@@ -288,7 +462,7 @@
               <li>
                 <a
                   href="about.html"
-                  class="text-gray-400 hover:text-white transition-colors flex items-center"
+                  class="text-gray-400 hover:text-white transition-colors flex items-center hover:translate-x-1"
                 >
                   <i
                     class="fas fa-chevron-right text-xs mr-2 text-orange-500"
@@ -299,7 +473,7 @@
               <li>
                 <a
                   href="contact.html"
-                  class="text-gray-400 hover:text-white transition-colors flex items-center"
+                  class="text-gray-400 hover:text-white transition-colors flex items-center hover:translate-x-1"
                 >
                   <i
                     class="fas fa-chevron-right text-xs mr-2 text-orange-500"
@@ -310,7 +484,7 @@
               <li>
                 <a
                   href="#"
-                  class="text-gray-400 hover:text-white transition-colors flex items-center"
+                  class="text-gray-400 hover:text-white transition-colors flex items-center hover:translate-x-1"
                 >
                   <i
                     class="fas fa-chevron-right text-xs mr-2 text-orange-500"
@@ -321,7 +495,7 @@
               <li>
                 <a
                   href="#"
-                  class="text-gray-400 hover:text-white transition-colors flex items-center"
+                  class="text-gray-400 hover:text-white transition-colors flex items-center hover:translate-x-1"
                 >
                   <i
                     class="fas fa-chevron-right text-xs mr-2 text-orange-500"
@@ -332,7 +506,7 @@
               <li>
                 <a
                   href="#"
-                  class="text-gray-400 hover:text-white transition-colors flex items-center"
+                  class="text-gray-400 hover:text-white transition-colors flex items-center hover:translate-x-1"
                 >
                   <i
                     class="fas fa-chevron-right text-xs mr-2 text-orange-500"
@@ -351,22 +525,22 @@
               Contact Us
             </h4>
             <div class="space-y-3">
-              <div class="flex items-start">
+              <div class="flex items-start hover-grow">
                 <i class="fas fa-map-marker-alt mt-1 mr-3 text-orange-500"></i>
                 <p class="text-gray-400">
                   No. 24, Street 562, Sangkat Boeung Kak I, Khan Toul Kork,
                   Phnom Penh, Cambodia
                 </p>
               </div>
-              <div class="flex items-center">
+              <div class="flex items-center hover-grow">
                 <i class="fas fa-phone-alt mr-3 text-orange-500"></i>
                 <p class="text-gray-400">+855 717 240 181</p>
               </div>
-              <div class="flex items-center">
+              <div class="flex items-center hover-grow">
                 <i class="fas fa-envelope mr-3 text-orange-500"></i>
                 <p class="text-gray-400">ISTAD@gmail.com</p>
               </div>
-              <div class="flex items-center">
+              <div class="flex items-center hover-grow">
                 <i class="fas fa-clock mr-3 text-orange-500"></i>
                 <p class="text-gray-400">Mon-Fri: 8:00 AM - 5:00 PM</p>
               </div>
@@ -388,12 +562,12 @@
               <input
                 type="email"
                 placeholder="Your email address"
-                class="px-4 py-3 rounded-md bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 text-white"
+                class="px-4 py-3 rounded-md bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 text-white hover-grow"
                 required
               />
               <button
                 type="submit"
-                class="bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-6 rounded-md transition-colors"
+                class="bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-6 rounded-md transition-colors hover:scale-105"
               >
                 Subscribe
               </button>
@@ -407,16 +581,22 @@
             class="flex flex-col md:flex-row justify-between items-center text-center md:text-left"
           >
             <p class="text-gray-500 text-sm">
-              &copy; 2025 ISTAD. All rights reserved.
+              &copy; <span id="year"></span> ISTAD. All rights reserved.
             </p>
             <div class="flex space-x-4 mt-3 md:mt-0">
-              <a href="#" class="text-gray-500 hover:text-gray-300 text-sm"
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-300 text-sm transition-colors"
                 >Privacy Policy</a
               >
-              <a href="#" class="text-gray-500 hover:text-gray-300 text-sm"
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-300 text-sm transition-colors"
                 >Terms of Service</a
               >
-              <a href="#" class="text-gray-500 hover:text-gray-300 text-sm"
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-300 text-sm transition-colors"
                 >Sitemap</a
               >
             </div>
